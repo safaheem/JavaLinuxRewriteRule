@@ -6,7 +6,7 @@
 <urlrewrite>
 <rule>
     <name>Domain Name Check</name>
-    <condition name="host" operator="notequal">www.yourdomain.com</condition>
+    <condition name="host" operator="notequal">www.google.com</condition>
     <from>^(.*)$</from>
     <to type="redirect">http://www.yourdomain.com$1</to>
 </rule>
