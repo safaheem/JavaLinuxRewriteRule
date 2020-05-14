@@ -4,10 +4,14 @@
     "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd">
  
 <urlrewrite>
-<rule>
+<!-- <rule>
     <name>Domain Name Check</name>
     <condition name="host" operator="notequal">www.google.com</condition>
     <from>^(.*)$</from>
     <to type="redirect">http://www.yourdomain.com$1</to>
-</rule>
+</rule> -->
+    <rule>
+        <from>^/$</from>
+        <to type="redirect">/index.html</to>
+    </rule>
  </urlrewrite>
